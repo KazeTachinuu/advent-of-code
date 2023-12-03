@@ -1,5 +1,0 @@
-abcx
-abcy
-abcz
-6
-3
