@@ -39,7 +39,7 @@ file = "README.md"
 content-type = "text/markdown"
 
 [project.urls]
-Homepage = "https://github.com/wimglenn/advent-of-code"
+Homepage = "https://github.com/kazetachinuu/advent-of-code"
 
 [project.scripts]
 aocw = "aoc_wim.cli:run_one"
