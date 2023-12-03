@@ -3,7 +3,7 @@
 https://adventofcode.com/2023/day/1
 """
 import regex as re
-from aocd import data, submit
+from aocd import data
 
 
 ns = "one, two, three, four, five, six, seven, eight, nine".split(", ")
@@ -23,6 +23,6 @@ for line in data.splitlines():
 
 print("answer_a:", a)
 print("answer_b:", b)
-submit(a, part="a", day=1, year=2023)
-submit(b, part="b", day=1, year=2023)
+# submit(a, part="a", day=1, year=2023)
+# submit(b, part="b", day=1, year=2023)
 
