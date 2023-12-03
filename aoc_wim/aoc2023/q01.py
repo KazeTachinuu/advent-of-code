@@ -12,11 +12,12 @@ a = b = 0
 pat_b = re.compile(rf"(\d|{'|'.join(ns)})")
 for line in data.splitlines():
 
-    nums_a = [0]
+    nums_a = []
     for c in line:
         if c in "0123456789":
             nums_a.append(int(c))
 
+    nums_a = nums_a or [0]
     nums_b = [int(d.get(x, x)) for x in pat_b.findall(line, overlapped=True)] or [0]
     a += nums_a[0] * 10 + nums_a[-1]
     b += nums_b[0] * 10 + nums_b[-1]
