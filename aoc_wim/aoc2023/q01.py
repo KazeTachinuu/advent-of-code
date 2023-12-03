@@ -12,7 +12,7 @@ a = b = 0
 pat_b = re.compile(rf"(\d|{'|'.join(ns)})")
 for line in data.splitlines():
 
-    nums_a = []
+    nums_a = [0]
     for c in line:
         if c in "0123456789":
             nums_a.append(int(c))
